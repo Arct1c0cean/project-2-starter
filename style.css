@@ -1,0 +1,156 @@
+/* STYLE FOR YOUR INDEX.HTML */
+body{
+    text-align: center;
+}
+h1{
+    color: black;
+}
+.Info{
+    background-color: bisque;
+    text-align: left;
+    margin: 5% 10%;
+    padding: 1% 5%;
+}
+
+.history{
+    background-color: beige;
+    padding: 1%;
+    margin: 5% 40%;
+    margin-top: 10%;
+}
+.Page_buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+    margin-top: 6%;
+}
+button{
+    width: 15%;
+    height: 60px;
+}
+a{
+    width: 15%;
+    height: 60px;
+}
+.Page_buttons .b3{
+    width: 100%;
+    height: 60px;
+}
+
+.Page_buttons .b3:active{
+    animation: none
+}
+
+button:hover{
+    filter: brightness(90%);
+}
+button:active{
+    animation: shake .2s 
+}
+
+.htext{
+    color: black;
+}
+
+.timeline{
+    text-align: left;
+    background-color: bisque;
+    padding: 3%;
+    margin: 5%;
+}
+
+.tlimg{
+    width: 70%;
+    text-align: center;
+    border: 5px ridge black;
+    margin-left: 15%;
+    
+}
+.soupy{
+    width: 40%;
+    animation: float infinite 4s linear
+}
+.firering{
+    position: absolute;
+    width: 15%;
+    display: inline;
+    right: 29%;
+    opacity: 80%;
+    
+    animation: flamespin infinite 4s linear;
+    z-index: -1;
+}
+
+.wa{
+    color: azure;
+    /* edit colors and style later */
+}
+.wa:hover{
+    color: rgb(255, 252, 150);
+    transition: 1s;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
+.flex-tile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 2%;
+    padding: 20px;
+    background-color: rgb(196, 233, 255);
+    border-radius: 8px;
+    border: 5px outset white;
+}
+
+.run{
+    width: 150px;
+    position: absolute;
+    left: -149px;
+    animation: nickrun infinite 3s linear;
+    
+}
+
+
+@keyframes float {
+    0% {margin-top: 50px;
+    margin-bottom: 50px;}
+    20%{margin-top: 100px;
+    margin-bottom: 0px;}
+    60%{margin-top: 0px;
+    margin-bottom: 100px;}
+    70%{margin-top: 10px;
+    margin-bottom: 90px;}
+    100%{margin-top: 50px;
+    margin-bottom: 50px;}
+}
+
+@keyframes flamespin {
+    0%{rotate: 0deg;}
+    25%{rotate: 90deg;}
+    50%{rotate: 180deg;}
+    75%{rotate: 270deg;}
+    100%{rotate: 360deg;}
+}
+
+@keyframes shake {
+    0%{rotate: 0deg;}
+    25%{rotate: 20deg;}
+    50%{rotate: 0deg;}
+    75%{rotate: -20deg;}
+    100%{rotate: 0deg}
+}
+
+@keyframes nickrun {
+    0%{left: -140px;}
+    50%{left: 50%;}
+    100%{left: 100%;}
+}

@@ -1,0 +1,201 @@
+/* STYLE FOR YOU MAIN.HTML */
+h1{
+    color: black;
+    text-align: center;
+}
+h2{
+   color: black;
+}
+body{
+    background-color: white;
+    align-content: center;
+}
+.Room_Base{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px 0%;
+    margin: 20px 15%;
+    padding-bottom: 30px
+}
+.base{
+   width: 400px;
+   height: 30vh;
+    
+    /* fix dimen later with actual image */
+}
+
+
+.room_buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 10%;
+}
+button{
+    width: 300px;
+    margin: 2%;
+    height: 60px;
+}
+button:hover{
+    filter: brightness(90%);
+}
+
+/* START OF IMAGE OVERLAYS */
+.Overlay1 {
+  display: inline;
+  position: absolute;
+  height: 30vh;
+  width: 400px;
+  top: 175px;
+  opacity: 0%;
+  background-color: red;
+  left: 50%;
+  margin-left: -200px;
+}
+
+
+.b1:active ~ .Overlay1{
+  opacity: 100%;
+} 
+.Overlay2 {
+  display: inline;
+  position: absolute;
+  height: 30vh;
+  width: 400px;
+  top: 175px;
+  opacity: 0%;
+  background-color: rgb(128, 255, 0);
+  left: 50%;
+  margin-left: -200px;
+}
+
+
+.b2:active ~ .Overlay2{
+  opacity: 100%;
+} 
+.Overlay3 {
+  display: inline;
+  position: absolute;
+  height: 30vh;
+  width: 400px;
+  top: 175px;
+  opacity: 0%;
+  background-color: rgb(0, 191, 255);
+  left: 50%;
+  margin-left: -200px;
+}
+
+
+.b3:active ~ .Overlay3{
+  opacity: 100%;
+} 
+.Overlay4 {
+  display: inline;
+  position: absolute;
+  height: 30vh;
+  width: 400px;
+  top: 175px;
+  opacity: 0%;
+  background-color: rgb(153, 0, 255);
+  left: 50%;
+  margin-left: -200px;
+}
+
+
+.b4:active ~ .Overlay4{
+  opacity: 100%;
+} 
+
+.checkbox{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 20%;
+}
+/* END OF IMAGE OVERLAYS */
+
+
+/* START OF CHECK BOX CONTENT */
+.c {
+    background-color: blanchedalmond;
+    padding: 3vw
+}
+h3{
+    text-align: center;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #996504;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+/* END OF CHECK BOX CONTENT */
+
+.Disclaimer{
+    background-color: azure;
+    margin: 5% 10%;
+    padding: 3% 10%;
+}
+
+.return{
+    background-color: aqua;
+}
