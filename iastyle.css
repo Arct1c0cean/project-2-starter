@@ -165,6 +165,12 @@ button:active{
     animation: float infinite 4s linear
 }
 
+.imgalign{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
 .firering{
     position: absolute;
     width: 15%;
