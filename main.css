@@ -1,27 +1,53 @@
 /* STYLE FOR YOU MAIN.HTML */
-h1{
-    color: black;
-    text-align: center;
+
+@font-face {
+    font-family: Quest;
+    src: url(fonts/Antique\ Quest\ St.ttf);
 }
+@font-face {
+    font-family: Endor;
+    src: url(fonts/ENDOR___.ttf);
+}
+
+h1{
+    color:white ;
+    text-align: center;
+    font-family: Quest;
+    font-size: 4vh;
+}
+
 h2{
    color: black;
+   font-family: Quest;
+   font-size: 25;
 }
+
 body{
-    background-color: white;
     align-content: center;
+    background-image: url("CottageBG.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
 .Room_Base{
-    background-color: aliceblue;
+     background-image: url("paper/Paper_6.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80vw 140% ;
     text-align: center;
     padding: 20px 0%;
     margin: 20px 15%;
     padding-bottom: 30px
 }
+
 .base{
-   width: 400px;
-   height: 30vh;
+   width: 300px;
+   height: 18vh;
+   border: 4px outset #9c6c47;
     
-    /* fix dimen later with actual image */
+    /* I know the image dimensons are small, in order to get the overlays right it couldnt be to big :/  */
 }
 
 
@@ -31,26 +57,66 @@ body{
     align-items: center;
     margin: 5% 10%;
 }
+
 button{
     width: 300px;
     margin: 2%;
     height: 60px;
+    font-family: Quest;
+    font-size: 20px;
 }
+
 button:hover{
     filter: brightness(90%);
+}
+/* i know the default button effect may do this, but because most of them have background images i just wanted to make sure */
+
+.b1{
+    background-image: url("paper/Paper_3.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22vw 140% ;
+    background-color: transparent;
+    border: none;
+}
+
+.b2{
+    background-image: url("paper/Paper_1.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22vw 100% ;
+    background-color: transparent;
+    border: none;
+}
+
+.b3{
+    background-image: url("paper/Paper_2.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22vw 140% ;
+    background-color: transparent;
+    border: none;
+}
+
+.b4{
+    background-image: url("paper/Paper_5.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22vw 100% ;
+    background-color: transparent;
+    border: none;
 }
 
 /* START OF IMAGE OVERLAYS */
 .Overlay1 {
   display: inline;
   position: absolute;
-  height: 30vh;
-  width: 400px;
-  top: 175px;
+  width: 300px;
+  height: 18vh;
+  top: 236px;
   opacity: 0%;
-  background-color: red;
   left: 50%;
-  margin-left: -200px;
+  margin-left: -150px;
 }
 
 
@@ -58,15 +124,14 @@ button:hover{
   opacity: 100%;
 } 
 .Overlay2 {
-  display: inline;
+ display: inline;
   position: absolute;
-  height: 30vh;
-  width: 400px;
-  top: 175px;
+  width: 300px;
+  height: 18vh;
+  top: 236px;
   opacity: 0%;
-  background-color: rgb(128, 255, 0);
   left: 50%;
-  margin-left: -200px;
+  margin-left: -150px;
 }
 
 
@@ -76,13 +141,12 @@ button:hover{
 .Overlay3 {
   display: inline;
   position: absolute;
-  height: 30vh;
-  width: 400px;
-  top: 175px;
+  width: 300px;
+  height: 18vh;
+  top: 236px;
   opacity: 0%;
-  background-color: rgb(0, 191, 255);
   left: 50%;
-  margin-left: -200px;
+  margin-left: -150px;
 }
 
 
@@ -92,13 +156,12 @@ button:hover{
 .Overlay4 {
   display: inline;
   position: absolute;
-  height: 30vh;
-  width: 400px;
-  top: 175px;
+  width: 300px;
+  height: 18vh;
+  top: 236px;
   opacity: 0%;
-  background-color: rgb(153, 0, 255);
   left: 50%;
-  margin-left: -200px;
+  margin-left: -150px;
 }
 
 
@@ -108,20 +171,35 @@ button:hover{
 
 .checkbox{
     display: flex;
-    justify-content: space-between;
-    padding: 2% 20%;
+    padding: 2% 3%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
 }
 /* END OF IMAGE OVERLAYS */
 
 
 /* START OF CHECK BOX CONTENT */
 .c {
-    background-color: blanchedalmond;
-    padding: 3vw
+    background-image: url("paper/Paper_8.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 138% ;
+    padding: 3%;
+    padding-top: 1%;
+    margin: 10px;
+    width: 250px;
+
 }
 h3{
     text-align: center;
+    padding-bottom: 15%;
+    font-size: 28px;
+    font-family: Quest;
 }
+
+
 
 .container {
   display: block;
@@ -129,12 +207,12 @@ h3{
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 23px;
+  font-family: Endor;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  
 }
 
 /* Hide the browser's default radio button */
@@ -191,11 +269,38 @@ h3{
 /* END OF CHECK BOX CONTENT */
 
 .Disclaimer{
-    background-color: azure;
+   background-image: url("paper/Paper_7.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 87vw 190% ;
     margin: 5% 10%;
-    padding: 3% 10%;
+    padding: 2% 6%;
+}
+
+.guh{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* for flexbox alignment ^^ */
+
+p{
+  font-family: Endor;
 }
 
 .return{
-    background-color: aqua;
+    background-color: rgb(200, 158, 121);
+    border: 4px outset #9c6c47;
+}
+
+.return:hover{
+  text-shadow: 0px 0px 6px #fff4ad;
+  color: #785107;
+  filter: brightness(98%);
+}
+
+.return:active{
+  border: inset;
+  filter: brightness(88%);
+  text-shadow: none;
 }

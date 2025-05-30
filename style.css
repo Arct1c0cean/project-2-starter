@@ -1,23 +1,69 @@
 /* STYLE FOR YOUR INDEX.HTML */
+
+@font-face {
+    font-family: Quest;
+    src: url(fonts/Antique\ Quest\ St.ttf);
+}
+
+@font-face {
+    font-family: Endor;
+    src: url(fonts/ENDOR___.ttf);
+}
+
+
 body{
     text-align: center;
+    background-image: url("CottageBG.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
 h1{
-    color: black;
+    color: white ;
+    font-family: Quest;
+    font-size: 6vh;
 }
+
+h2{
+    font-family: Endor;
+    font-size: xx-large;
+    letter-spacing: 3px;
+    color: white;
+}
+
+h3{
+    font-family: Quest;
+}
+
+p{
+    font-family: Endor;
+}
+
 .Info{
-    background-color: bisque;
+    background-image: url("paper/Paper_6.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75vw 130% ;
     text-align: left;
-    margin: 5% 10%;
-    padding: 1% 5%;
+    margin: 3% 8%;
+    padding: 2% 13%;
+    padding-bottom: 6%;
+    /* give room as needed */
 }
 
 .history{
-    background-color: beige;
+    background-image: url("paper/Paper_5.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75vw 130% ;
     padding: 1%;
-    margin: 5% 40%;
+    margin: 5% 30%;
     margin-top: 10%;
 }
+
+
 .Page_buttons{
     display: flex;
     justify-content: space-between;
@@ -25,37 +71,82 @@ h1{
     margin: 2%;
     margin-top: 6%;
 }
+
 button{
     width: 15%;
     height: 60px;
+    font-family: Quest;
+    font-size: 12px;
 }
+
 a{
     width: 15%;
     height: 60px;
 }
+
+.Page_buttons .b1{
+    background-image: url("paper/Paper_3.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16vw 120% ;
+    background-color: transparent;
+    border: none;
+}
+
+.Page_buttons .b2{
+    background-image: url("paper/Paper_1.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16vw 100% ;
+    background-color: transparent;
+    border: none;
+}
+
 .Page_buttons .b3{
+    background-image: url("paper/Paper_2.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16vw 140% ;
+    background-color: transparent;
+    border: none;
     width: 100%;
     height: 60px;
 }
 
 .Page_buttons .b3:active{
-    animation: none
+    animation: none ;
+    opacity: 80%;
+}
+
+.Page_buttons .b4{
+    background-image: url("paper/Paper_5.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16vw 100% ;
+    background-color: transparent;
+    border: none;
 }
 
 button:hover{
     filter: brightness(90%);
 }
+
 button:active{
     animation: shake .2s 
 }
 
 .htext{
     color: black;
+    font-size: xx-large;
 }
 
 .timeline{
+    background-image: url("paper/Paper_8.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140% auto;
     text-align: left;
-    background-color: bisque;
+    
     padding: 3%;
     margin: 5%;
 }
@@ -65,12 +156,15 @@ button:active{
     text-align: center;
     border: 5px ridge black;
     margin-left: 15%;
+    margin: 4%;
     
 }
+
 .soupy{
     width: 40%;
     animation: float infinite 4s linear
 }
+
 .firering{
     position: absolute;
     width: 15%;
@@ -80,15 +174,17 @@ button:active{
     
     animation: flamespin infinite 4s linear;
     z-index: -1;
+    transform: scaleX(-1);
 }
 
 .wa{
-    color: azure;
-    /* edit colors and style later */
+    color: rgb(82, 48, 9);
 }
+
 .wa:hover{
-    color: rgb(255, 252, 150);
-    transition: 1s;
+    color: rgb(255, 251, 228);
+    transition: .5s;
+    text-shadow: 0px 0px 4px rgb(218, 175, 19);
 }
 
 .flex-container {
@@ -103,22 +199,17 @@ button:active{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 300px;
     margin: 2%;
     padding: 20px;
-    background-color: rgb(196, 233, 255);
-    border-radius: 8px;
-    border: 5px outset white;
+    background-color: bisque ;
+    border: 6px ridge bisque;
 }
 
-.run{
-    width: 150px;
-    position: absolute;
-    left: -149px;
-    animation: nickrun infinite 3s linear;
-    
+.gal{
+    width: 250px;
+    border: 6px ridge rgb(255, 236, 213);
 }
-
 
 @keyframes float {
     0% {margin-top: 50px;
@@ -149,8 +240,20 @@ button:active{
     100%{rotate: 0deg}
 }
 
+.run{
+    width: 150px;
+    position: absolute;
+    left: -149px;
+    animation: nickrun infinite 3s linear;
+    
+}
+
 @keyframes nickrun {
     0%{left: -140px;}
-    50%{left: 50%;}
-    100%{left: 100%;}
+    50%{left: 60%;
+     transform: scaleX(1);}
+    51%{ transform: scaleX(-1);}
+    100%{right: -140px;
+      transform: scaleX(-1);
+    }
 }
